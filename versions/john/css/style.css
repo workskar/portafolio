@@ -1,0 +1,344 @@
+/* line 17, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* ======================LAYOUT =======================*/
+/* line 40, ../sass/_base.scss */
+html {
+  background: #eee;
+}
+
+/* Tabs */
+/* line 44, ../sass/_base.scss */
+.js-on #tabs article {
+  display: none;
+}
+
+/* line 47, ../sass/_base.scss */
+blockquote {
+  float: left;
+  margin: 1em 3em;
+}
+/* line 50, ../sass/_base.scss */
+blockquote p {
+  font-size: 1.4em;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 58, ../sass/_base.scss */
+.js-on #tabs article.active {
+  display: block;
+}
+
+/* line 61, ../sass/_base.scss */
+[role=main] {
+  padding: 1.5em 3em;
+}
+/* line 63, ../sass/_base.scss */
+[role=main] .banner {
+  background: url("../images/banner.jpg");
+  width: 792px;
+  height: 233px;
+}
+
+/* line 65, ../sass/_base.scss */
+a {
+  font: 1em/1.5 Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  color: #105672;
+}
+/* line 67, ../sass/_base.scss */
+a:hover, a:focus {
+  text-decoration: underline;
+}
+/* line 70, ../sass/_base.scss */
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 75, ../sass/_base.scss */
+p {
+  font: 1em/1.5 Georgia, Times, "Times New Roman", serif;
+  color: #111111;
+}
+
+/* line 78, ../sass/_base.scss */
+ul, li {
+  font: 1em/1.5 Georgia, Times, "Times New Roman", serif;
+  list-style: none;
+}
+
+/* line 81, ../sass/_base.scss */
+h1 {
+  font: 1em/1.5 Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* line 84, ../sass/_base.scss */
+h2, h3 {
+  font: 1em/1.5 Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* line 87, ../sass/_base.scss */
+#wrapper {
+  background: #fff;
+  height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  	/*@include zen-grid-container;
+  	$zen-column-count: 1;
+    	$zen-gutter-width: 10px;*/
+}
+/* line 95, ../sass/_base.scss */
+#wrapper #head {
+  padding: .5em 3em;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+/* line 104, ../sass/_base.scss */
+#wrapper #head h1 #logo {
+  background: url("../images/logo.png");
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 110%;
+  width: 200px;
+  height: 113px;
+  display: block;
+}
+/* line 112, ../sass/_base.scss */
+#wrapper #head nav {
+  float: right;
+  text-align: right;
+}
+/* line 115, ../sass/_base.scss */
+#wrapper #head nav a {
+  color: #05083f;
+  display: inline-block;
+}
+/* line 120, ../sass/_base.scss */
+#wrapper #head nav ul li {
+  display: inline-block;
+  float: left;
+}
+/* line 122, ../sass/_base.scss */
+#wrapper #head nav ul li a {
+  padding: .3em .8em;
+  font-weight: bold;
+}
+/* line 126, ../sass/_base.scss */
+#wrapper #head nav ul li a:hover, #wrapper #head nav ul li a:focus {
+  color: rgba(119, 136, 153, 0.6);
+  text-decoration: none;
+}
+/* line 134, ../sass/_base.scss */
+#wrapper #head nav .social {
+  font-size: .8em;
+}
+/* line 136, ../sass/_base.scss */
+#wrapper #head nav .social a {
+  font-weight: 300;
+  padding: .3em .5em;
+}
+/* line 139, ../sass/_base.scss */
+#wrapper #head nav .social a:hover, #wrapper #head nav .social a:focus {
+  text-decoration: underline;
+}
+/* line 146, ../sass/_base.scss */
+#wrapper #tabs {
+  background: #ddd;
+  color: #05083F;
+  font-weight: 300;
+}
+/* line 148, ../sass/_base.scss */
+#wrapper #tabs nav {
+  position: relative;
+  overflow: hidden;
+  display: table;
+  background: #bbb;
+}
+/* line 153, ../sass/_base.scss */
+#wrapper #tabs nav a {
+  width: 150px;
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  color: #05083F;
+}
+/* line 159, ../sass/_base.scss */
+#wrapper #tabs nav a:hover, #wrapper #tabs nav a:focus {
+  background: #eee;
+  text-decoration: none;
+}
+/* line 164, ../sass/_base.scss */
+#wrapper #tabs nav .active {
+  background: #ddd;
+  color: #05083F;
+  font-weight: 300;
+}
+/* line 168, ../sass/_base.scss */
+#wrapper #tabs article {
+  padding: 2em;
+}
+/* line 171, ../sass/_base.scss */
+#wrapper #tabs #mobiles {
+  display: none;
+  border-radius: 0;
+}
+/* line 174, ../sass/_base.scss */
+#wrapper #tabs #mobiles a, #wrapper #tabs #mobiles a:first-child, #wrapper #tabs #mobiles a:last-child {
+  width: 300px;
+  border-radius: 0;
+}
+/* line 181, ../sass/_base.scss */
+#wrapper footer {
+  background: #05083f;
+  color: #fff;
+  padding: .1em 3em;
+}
+/* line 185, ../sass/_base.scss */
+#wrapper footer p {
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Media queries */
+@media screen and (min-width: 900px) {
+  /* line 191, ../sass/_base.scss */
+  body {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 196, ../sass/_base.scss */
+  #wrapper #tabs nav {
+    display: none;
+    position: relative;
+  }
+
+  /* line 200, ../sass/_base.scss */
+  #wrapper #tabs #mobiles {
+    display: block;
+  }
+
+  /* line 203, ../sass/_base.scss */
+  #wrapper #tabs article {
+    display: block;
+  }
+
+  /* line 207, ../sass/_base.scss */
+  [role=main] .banner {
+    background: url("../images/banner-small.jpg");
+    width: 320px;
+    height: 98px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 212, ../sass/_base.scss */
+  blockquote {
+    float: none;
+  }
+
+  /* line 217, ../sass/_base.scss */
+  #wrapper #head nav {
+    float: none;
+    margin: -0.5em -3em 0;
+    background: #05083F;
+    overflow: hidden;
+    text-align: left;
+  }
+  /* line 225, ../sass/_base.scss */
+  #wrapper #head nav ul li a {
+    border-right: 1px solid #222;
+    color: #fff;
+    padding: 0.7em 0.8em;
+  }
+
+  /* line 236, ../sass/_base.scss */
+  [role=main] {
+    padding: 1.5em 1em;
+  }
+  /* line 238, ../sass/_base.scss */
+  [role=main] .banner {
+    background: url("../images/banner-small.jpg");
+    width: 335px;
+    height: 98px;
+  }
+
+  /* line 240, ../sass/_base.scss */
+  #wrapper #head nav div {
+    display: none;
+  }
+}

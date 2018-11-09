@@ -1,0 +1,32 @@
+/* ======================RESET =======================*/ 
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time{ margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,figcaption,td { font-size: 12.5px; font-weight: normal; font-family: Arial; }
+fieldset,iframe { border: none; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+article,aside,footer,header,hgroup,nav,section,figure,figcaption { display: block; }
+
+/* ======================LAYOUT =======================*/ 
+img { border: 0; margin:0;}
+body
+{
+    background-color: #afafaf;
+    border-style: none;
+	width:1000px; margin:0 auto 0;
+}
+ul { list-style: none outside; font:normal 12.5px Arial, Sans-serif, Verdana; }
+ol { list-style: decimal; }
+div,span,p,ul,ol{font-size: 12.5px; font-weight: normal; font-family: Arial;}
+a { color:#ff0000; font:normal 12.5px Arial, Sans-serif, verdana;text-decoration:none;}
+h1,h2,h3,h4,h5,h6 { color:#ff0000; }
+h1,h2,h3,h4,p { font:bold 12.5px/1em Arial, sans-serif, verdana; }
+h2,h3,h4 { line-height: 1em; }
+h3,h4{color:#ff0000;}
+h1,h2 { margin-bottom: 10px;margin-top:10px;}
+p { margin:0;font:normal 12.5px Arial, Sans-serif, verdana; }
+#main{float:left;width:1000px;background-color:#fff;padding-bottom:50px;}
+.red{color:#ff0000;}
+span.nothing{float:left;visibility:hidden;display:none;}
+#content{float:left;width:727px;margin:0 0 0 24px;}
+.boldp{font-weight:bold;color:#000;}
+.clear{clear:both;}

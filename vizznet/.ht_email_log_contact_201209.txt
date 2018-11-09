@@ -1,0 +1,2 @@
+Datetime:2012-09-19 11:54:40SubscriberId: 0, Email:karen.pasquel@qicomm.com, Server:GMAIL SMTP, Status:Failed,  (SMTP Error: Could not connect to SMTP host.)
+Datetime:2012-09-19 11:54:40, SubscriberId: 0, Email:karen.pasquel@qicomm.com, Server:Local SMTP, Status:Failed, 

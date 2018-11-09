@@ -1,0 +1,40 @@
+/* ======================LAYOUT =======================*/
+/* line 28, ../../sass/base.scss */
+body {
+  background: url(../img/homev2.jpg) 50% 0 no-repeat;
+  background-color: #403e3e;
+  overflow-x: hidden;
+  height: 100%;
+  width: 980px;
+  margin: 0 auto;
+}
+/* line 35, ../../sass/base.scss */
+body a {
+  font-size: 12.5px;
+  text-decoration: none;
+  color: #ec008c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 38, ../../sass/base.scss */
+body p {
+  font-size: 12.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 41, ../../sass/base.scss */
+body ul, body li {
+  list-style: none;
+  font-size: 12.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 44, ../../sass/base.scss */
+body h1 {
+  font-size: 13.5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 47, ../../sass/base.scss */
+body h2, body h3 {
+  font-size: 13px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}

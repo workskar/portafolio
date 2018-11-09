@@ -1,0 +1,17 @@
+/* ======================RESET =======================*/ 
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time{ margin: 0; padding: 0; }
+img { border: 0; margin:0;}
+body
+{
+    background-color: #fe0000;
+    background-image: url("../img/grnd.jpg");
+    background-repeat: repeat-x;
+    border-style: none;
+	width:1000px; 
+	margin:0 auto 0;
+}
+#center{margin-top:240px;text-align:center;}
+#center .logo{margin-bottom:40px;}
+#center a,.red{color:#fe0000;font-weight:bold;}
+.boldp{color:#040404;font-weight:bold;}
+p{font:normal 16.5px Arial, Sans-serif, Verdana;margin:10px 0;}

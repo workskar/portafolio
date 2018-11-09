@@ -1,0 +1,208 @@
+/* DESCRIPTION */
+/* _______________________________________________ */
+/* line 105, ../../sass/carousel_description.scss */
+.carousel {
+  margin: 20px auto;
+  width: 930px;
+  height: auto;
+  position: relative;
+  overflow: visible;
+  border: none;
+}
+/* line 107, ../../sass/carousel_description.scss */
+.carousel .slides {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  overflow: visible;
+  border: none;
+}
+/* line 109, ../../sass/carousel_description.scss */
+.carousel .slides .slideItem {
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* line 111, ../../sass/carousel_description.scss */
+.carousel .slides .slideItem a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* line 114, ../../sass/carousel_description.scss */
+.carousel .slides .slideItem img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* line 118, ../../sass/carousel_description.scss */
+.carousel .slides .videoOverlay {
+  background: url("images/video.png") no-repeat center;
+  /* play button */
+}
+/* line 121, ../../sass/carousel_description.scss */
+.carousel .slides .spinner {
+  background: black url(images/loading.gif) no-repeat center;
+  /* video preloader */
+}
+/* line 125, ../../sass/carousel_description.scss */
+.carousel .buttonNav {
+  position: relative;
+  margin: 0 auto;
+  z-index: 999;
+}
+/* line 129, ../../sass/carousel_description.scss */
+.carousel .buttonNav .numbers {
+  color: #828282;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: Arial, Verdana;
+  position: relative;
+  float: left;
+  margin: 5px;
+  cursor: pointer;
+}
+/* line 131, ../../sass/carousel_description.scss */
+.carousel .buttonNav .numbers:hover {
+  color: black;
+  text-decoration: underline;
+}
+/* line 133, ../../sass/carousel_description.scss */
+.carousel .buttonNav .numberActive {
+  background: none;
+  color: black;
+  cursor: default;
+}
+/* line 138, ../../sass/carousel_description.scss */
+.carousel .buttonNav .bullet {
+  width: 16px;
+  height: 16px;
+  background: url(../img/Bullet-White.png) no-repeat center;
+  position: relative;
+  float: left;
+  margin: 5px;
+  cursor: pointer;
+}
+/* line 140, ../../sass/carousel_description.scss */
+.carousel .buttonNav .bullet:hover {
+  background: url(../img/Bullet-Black.png) no-repeat center;
+}
+/* line 144, ../../sass/carousel_description.scss */
+.carousel .buttonNav .bulletActive {
+  background: url(../img/Bullet-Black.png) no-repeat center;
+  cursor: default;
+}
+/* line 149, ../../sass/carousel_description.scss */
+.carousel .nextButton {
+  right: 10px;
+  background: url("images/next_button.png") no-repeat center;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 9999;
+  top: 133px;
+}
+/* line 152, ../../sass/carousel_description.scss */
+.carousel .prevButton {
+  left: 10px;
+  background: url("images/prev_button.png");
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 9999;
+  top: 133px;
+}
+/* line 155, ../../sass/carousel_description.scss */
+.carousel .description {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  float: left;
+  margin: 0;
+  margin-left: 30px;
+  padding: 0px;
+}
+/* line 162, ../../sass/carousel_description.scss */
+.carousel .description h2 {
+  margin-bottom: 5px;
+  color: #fff;
+}
+/* line 165, ../../sass/carousel_description.scss */
+.carousel .description h3 {
+  font-size: 13.5px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+/* line 168, ../../sass/carousel_description.scss */
+.carousel .description .linkWeb {
+  margin-top: 38px;
+  float: left;
+  text-decoration: underline;
+}
+/* line 172, ../../sass/carousel_description.scss */
+.carousel .description .linkWeb:hover {
+  text-decoration: none;
+}
+/* line 176, ../../sass/carousel_description.scss */
+.carousel .description p {
+  color: white;
+}
+/* line 179, ../../sass/carousel_description.scss */
+.carousel .description div {
+  width: 400px;
+  height: 300px;
+}
+/* line 183, ../../sass/carousel_description.scss */
+.carousel .shadow {
+  width: 100%;
+  height: 82px;
+}
+/* line 186, ../../sass/carousel_description.scss */
+.carousel .shadow .shadowLeft {
+  background: url("images/shadowLeft.png") no-repeat;
+  width: 100px;
+  /* fix png problems in ie */
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)";
+  /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);
+  /* IE6 & 7 */
+  height: 82px;
+}
+/* line 189, ../../sass/carousel_description.scss */
+.carousel .shadow .shadowMiddle {
+  background: url("images/shadowTile.png") repeat-x;
+  /* fix png problems in ie */
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)";
+  /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);
+  /* IE6 & 7 */
+  height: 82px;
+}
+/* line 192, ../../sass/carousel_description.scss */
+.carousel .shadow .shadowRight {
+  width: 100px;
+  background: url("images/shadowRight.png") no-repeat;
+  /* fix png problems in ie */
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)";
+  /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);
+  /* IE6 & 7 */
+  height: 82px;
+}
+/* line 196, ../../sass/carousel_description.scss */
+.carousel .gradient {
+  background-image: url(scripts/gradient.svg);
+}

@@ -1,0 +1,32 @@
+/* line 23, ../../sass/profile.scss */
+.main_container {
+  width: 980px;
+}
+/* line 25, ../../sass/profile.scss */
+.main_container .profile {
+  width: 529px;
+  height: 345px;
+  margin: 0 auto;
+  padding: 30px 25px 25px 25px;
+  /* needs latest Compass, add '@import "compass"' to your scss*/
+  background-color: #f6f8f9;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF6F8F9', endColorstr='#FFF5F7F9');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f8f9), color-stop(50%, #e5ebee), color-stop(51%, #d7dee3), color-stop(100%, #f5f7f9));
+  background-image: -webkit-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background-image: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background-image: -o-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  background-image: linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 3px 0 #2d2b2c;
+  -moz-box-shadow: 10px 10px 3px 0 #2d2b2c;
+  box-shadow: 10px 10px 3px 0 #2d2b2c;
+}
+/* line 33, ../../sass/profile.scss */
+.main_container .profile p {
+  margin: 10px 0;
+}

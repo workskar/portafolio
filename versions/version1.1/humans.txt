@@ -1,0 +1,12 @@
+/* TEAM */
+	Developer:		Karen Pasquel
+	Site:			karenpasquel.co.uk
+	Email:			workskar@gmail.com
+	Location:		London, UK
+
+/* SITE */
+	Language:		Espanish (ES), English (GB)
+	Standards:		HTML5, CSS3
+	Components:		jQuery
+
+/* THANKS */

@@ -1,0 +1,95 @@
+.rss-box {
+	 margin: 10px 0;
+	 padding: 4px 8px;
+	 background-color: #EFEFEF;
+	 border: 2px solid #E2E2E2;
+	 width:685px;
+}
+
+.rss-title, rss_title a {
+	font-family: Arial, Sans-serif, verdana;
+	font-size: 18px;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.rss-items {
+  font:normal 12.5px Arial, Sans-serif, verdana;
+}
+
+.rss-item  {
+  font-family: Arial, Sans-serif, verdana;
+  font-size: 12.5px; 
+  margin: 0 0 12px 0;
+}
+
+.rss-item a:link, .rss-item a:visited, .rss-item a:active {
+	text-decoration : none;
+	color:#ff0000;
+	font-weight:bold;
+	}
+
+.rss-item a:hover { 
+	text-decoration : none;
+	
+	}
+	
+.rss-date {
+	font-size: 11px;
+	font-weight : bold;
+	color: #000;
+	}
+
+.rss-item .rss-item-auth {
+	color: #888;
+	font-size: 11px;
+
+}
+
+li.f2jnag {
+	margin-top:1em;
+	font-weight:bold;
+	list-style: none;
+	font-size: 12.5px; 
+	/*   display:none;   */
+
+}
+
+.pod-play-box {
+	margin: 4px 0;
+	font-size:90%;
+}
+
+
+/* buttons modeled from http://www.wellstyled.com/css-inline-buttons.html */
+
+.pod-play {
+   _width:12em;
+   margin: 0 0.2em; padding: 0.1em 0; _padding:0;
+   
+   white-space:nowrap;
+   text-decoration: none;
+   vertical-align:middle;
+   background: #fb6;
+   color: black;
+   }
+.pod-play em {
+   _width:1em; _cursor:hand;
+   font-style: normal;
+   margin:0; padding: 0.1em 0.5em;
+   background: white;
+   color: #222;
+   }
+.pod-play span {
+   _width:1em; _cursor:hand;
+   margin:0; padding: 0.1em 0.5em 0.1em 0.3em;
+   }
+.pod-play:hover {
+   background: #666;
+   color: white;
+   }
+.pod-play:hover em {
+   background: black;
+   color: white
+   }
+ 

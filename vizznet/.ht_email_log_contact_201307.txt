@@ -1,0 +1,1 @@
+Datetime:2013-07-19 17:28:10SubscriberId: 0, Email:karen.pasquel@qicomm.com, Server:GMAIL SMTP, Status:Sent, 

@@ -1,0 +1,55 @@
+/* ======================CONTENT =======================*/
+/* line 19, ../../sass/content.scss */
+.main_container {
+  width: 930px;
+  height: 366px;
+  margin: 0 25px;
+  float: left;
+}
+/* line 21, ../../sass/content.scss */
+.main_container .cont-carousl {
+  float: left;
+}
+/* line 22, ../../sass/content.scss */
+.main_container #centre-me {
+  overflow: hidden;
+}
+
+/* line 24, ../../sass/content.scss */
+.main_project {
+  width: 930px;
+  height: 405px;
+  margin: 0 25px;
+  float: left;
+}
+/* line 26, ../../sass/content.scss */
+.main_project .cont-project {
+  display: inline;
+  float: left;
+  position: relative;
+  padding: 20px 0 15px 0;
+  background-color: #403e3e;
+}
+
+/* line 34, ../../sass/content.scss */
+#project {
+  overflow: hidden;
+}
+/* line 36, ../../sass/content.scss */
+#project .close {
+  float: left;
+  position: absolute;
+  right: 4px;
+  top: 5px;
+  z-index: 1000;
+}
+/* line 42, ../../sass/content.scss */
+#project .close .close-project {
+  background: url(../img/close.jpg) no-repeat;
+  width: 28px;
+  height: 28px;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}

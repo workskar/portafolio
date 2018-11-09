@@ -1,0 +1,47 @@
+/* ======================NAVEGATION =======================*/
+#head {
+  float: left;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+  padding: 25px 0 0 0;
+  height: 200px; }
+  #head #logo_karen {
+    background-image: url("../img/Karen_logo.png");
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 98px;
+    float: left;
+    margin: 0;
+    z-index: 100; }
+  #head #menu {
+    margin: 20px 30px 0 0;
+    float: right; }
+    #head #menu ul li {
+      float: left;
+      margin-left: 20px; }
+      #head #menu ul li a {
+        color: white;
+        font-size: 16px; }
+        #head #menu ul li a:hover {
+          text-shadow: rgba(255, 255, 255, 0.9); }
+        .ie7 #head #menu ul li a:hover, .ie8 #head #menu ul li a:hover, .ie9 #head #menu ul li a:hover {
+          zoom: 1;
+          background-color: #cccccc;
+          filter: progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc) progid:DXImageTransform.Microsoft.Glow(Color=#eeeeee, Strength=3);
+          position: relative;
+          top: -3px;
+          left: -3px; }
+    #head #menu ul .portflio a {
+      font-size: 24px; }
+
+.nothing {
+  float: left;
+  visibility: hidden;
+  display: none; }
+
+/* ======================FOOTER =======================*/
+#foot-nav {
+  float: left;
+  margin-top: 50px; }

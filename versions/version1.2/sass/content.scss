@@ -1,0 +1,46 @@
+/* ======================CONTENT =======================*/ 
+$background-color:#403e3e;
+
+@mixin container($heigh,$width){
+	width: $width;
+	height:$heigh;
+	margin :0 25px;
+	float:left;
+}
+@mixin btn-close($width,$heigh){
+	background: url(../img/close.jpg) no-repeat;  
+	width: $width;  
+	height: $heigh;  
+	text-indent: 110%;  
+	white-space: nowrap;  
+	overflow: hidden;  
+	display: block;
+}
+.main_container{
+	@include container(366px,930px);
+	.cont-carousl{float:left;}
+	#centre-me{overflow:hidden;}
+}
+.main_project{
+	@include container(405px,930px);
+	.cont-project{
+		display:inline;
+		float: left;
+		position: relative;
+		padding:20px 0 15px 0;
+		background-color :$background-color;
+	}
+}
+#project{
+	overflow:hidden;
+	.close{
+		float:left;
+		position:absolute;
+		right:4px;
+		top:5px;
+		z-index:1000;
+		.close-project{
+			@include btn-close(28px,28px);
+		}
+	}
+}

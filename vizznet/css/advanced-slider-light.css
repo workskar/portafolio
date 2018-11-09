@@ -1,0 +1,18 @@
+/*** Buttons ***/
+.advanced-slider .buttons{position:absolute;z-index:12;bottom:348px;height:16px}
+.advanced-slider .buttons a{
+	display:block;
+	float:left;
+	margin-right: 5px;
+	padding: 3px 14px 2px 6px;
+	background:url(../img/red_green_pager.png) no-repeat 0 -20px;
+	text-indent:-9999px;
+	cursor:pointer
+}
+.advanced-slider .buttons a:hover,.advanced-slider .buttons a.active{background-position:0 0;}
+/*** Arrows ***/
+.advanced-slider-arrows{position:absolute;z-index:13;top:0;left:0}
+.advanced-slider-arrows span{display:block;position:relative;width:49px;height:49px;text-indent:-9999px;cursor:pointer}
+.advanced-slider-arrows span:hover{background-position:0px -49px}
+.advanced-slider-arrows .previous{position:absolute;left:-25px;margin-top:-25px;}
+.advanced-slider-arrows .next{position:absolute;right:24px;margin-top:-25px;}

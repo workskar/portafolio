@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8' />
+    <title>Select Service</title>
+    <meta name='Description' content='' />
+    <meta name='Keywords' content='' />
+    <script type="text/javascript" src="/customer/resources/js/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="/customer/resources/js/service-select.js"></script>
+    
+
+
+<script type='text/javascript' src="/customer/resources/js/base.js"></script>
+<script type='text/javascript' src="/customer/resources/js/jquery-1.6.1.min.js"></script>
+<link rel='stylesheet' type='text/css' href="/customer/resources/css/base.css" />
+<link rel='stylesheet' type='text/css' href="/customer/resources/css/navegation.css" />
+<link rel='stylesheet' type='text/css' href="/customer/resources/css/pages.css" />
+<script type="text/javascript" src="js/basket.js"></script>
+
+</head>
+
+<body>
+<article id='main' class='select-broadband'>
+    <nav id='globaheader'>
+    <a id='logo' href='index.php'><span class='nothing'>VIZZnet</span></a>
+    <div id='vizz-menu'>
+        <ul id='vizz-pages'>
+            <li><a href='index.php'>Home</a></li>
+            <li><a href='about-us.php'>About Us</a></li>
+            <li><a href='products.php'>Products</a></li>
+            <li><a href='support.php'>Support</a></li>
+            <li><a href='contact-us.php'>Contact Us</a></li>
+        </ul>
+        <ul id='bottons'>
+            <li><a class='checkA' href='check-availability.php'>Check Availability</a></li>
+            <li><a class='switchP' href='switch-provider.php'>Switch Provider</a></li>
+            <li><a class='login' href='login.php'>Login</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class='center-image'>
+        <img alt='' title='' src="resources/img/small-banner.jpg">
+    </div>
+    <nav id='sub-menuvizz'>
+    <ul>
+        <li class='first'><a class='home' href='index.php'>Home</a></li>
+        <li><a class='check-av' href='service-check-by-phone.php'>Check Availability</a></li>
+        <li><a class='choose-op' href='select-broadband-package.php'>Choose options</a></li>
+        <li><a class='addons' href='add-ons.php'>Add-Ons</a></li>
+        <li><a class='aboutyou' href='personal-info.php'>About You</a></li>
+        <li><a class='your-de' href='your-details.php'>Your Details</a></li><li>
+        <li class='last'><a class='payment-de' href='payment-details.php'>Payment Details</a></li>
+    </ul>
+</nav>
+    <section id='content'>
+        <h1>Choose your package options</h1>
+        <h2 class='second'>You can see a summary on the right-hand side</h2>
+        <div id="wrapperDiv">
+            <div class='box-checkA'>
+                <div class='box-section'>
+                    <h3>Your line speed results</h3>
+                    <p>Your estimated download speed is 12.0 meg.
+                        VizzNet customers with similar lines to you receive between 6.0 meg
+                        and 15.0 meg.
+                        Click <a href="">here</a> to find out more about speed estimates.
+                        </p>
+                    <p>VizzNet will always provide you with the fastest speed possible and adheres to the Ofcom Voluntary
+                        Code of Practice: Broadband Speeds. Click <a href="">here</a> to find out more.
+                    </p>
+                    <p>Click here to view our <a href="">Broadband Packages</a></p>
+
+                    
+                </div>
+                <div class='box-section last-file'>
+                    <form method="post" action="create-shopping-cart.html">
+                        <input type="hidden" name="postcode" value="Object" />
+                        <h3>Package Info:</h3>
+                        <ul class='contract-opc'>
+                            <li>
+                                <label class='label-jsp'><blockquote>Broadband Package:</blockquote></label>
+                                <span class='boldp'>Broadband only; Value; Free basic router; 12 Months; Launch Offer</span>
+                            </li>
+                            <li>
+                                <label class='label-jsp'><blockquote>Broadband Contract:</blockquote></label>
+                                <span class='boldp'>12 Months</span>
+                            </li>
+                            <li>
+                                
+                                    <label class='label-jsp'><blockquote>Broadband Product:</blockquote></label>
+                                    <span class='boldp'>Value</span>
+                                
+                            </li>
+                            <li>
+                                
+                                    <label class='label-jsp'><blockquote>Equipment:</blockquote></label>
+                                    <span class='boldp'>Wireless Router</span>
+                                
+                            </li>
+                            <li>
+                                
+                                    <label class='label-jsp'><blockquote>Broadband Usage Limit:</blockquote></label>
+                                    <span class='boldp'>10 GB</span>
+                                
+                            </li>
+
+                        </ul>
+                        <input type="submit" class='btn-small' name="submit" id="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="boxes">
+            <div id="rightColumnOuter">
+                <div id="summary" class="baskets">
+					 <h3>One-off charges:</h3>
+                    <dl id='basket-setup'>
+                        <label class='label-jsp'>Broadband Monthly Fee</label>
+                        <span class='boldp'>7.99</span>
+                        
+                        <label class='label-jsp'>Broadband Connection</label>
+                        <span class='boldp'>0</span>
+                        
+                        <label class='label-jsp'>Broadband CPE</label>
+                        <span class='boldp'>0</span>
+                        
+                    </dl>
+                    <div class='clear'></div>
+                    <h3>Recurring charges:</h3>
+                    <dl>
+                        <label class='label-jsp'>Broadband Monthly Fee</label>
+                        <span class='boldp'>7.99</span>
+                    </dl>
+                    <div class='clear'></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='right-col'>
+        <ul id='box-contact'>
+    <li class='call'><a><p><span class='red-text'>Call Center</span><br><span class='boldp'>0800 345 6789</span></p></a></li>
+    <li class='chat'><a href='#'><p><span class='red-text'>Live Chat</span><br><span class='boldp'>Online</span></p></a></li>
+    <li class='tips'><a href='#'><p><span class='red-text'>Tips &amp; Tricks</span></p></a></li>
+    <li class='faqs'><a href='help.php'><p><span class='red-text'>FAQs</span></p></a></li>
+</ul>
+<nav id='products'>
+    <h2>Products &amp; Promotions</h2>
+    <ul id='menu_services'>
+        <li><a href="#">Compare broadband</a></li>
+        <li><a href='#'>Broadband extras</a></li>
+        <li><a href='#'>Speeds explained</a></li>
+        <li><a href="#">Wireless broadband</a></li>
+    </ul>
+</nav>
+    </section>
+</article><!-- page-main -->
+<footer id='vizzfooter'>
+    <div class='net-foot'>
+        <a id='logo-foot'><span class='nothing'>Logo Vizz Net</span></a>
+        <ul id='foot-menu'>
+            <li>
+                <h4>Why Us</h4>
+                <ul>
+                    <li><a href='#'>Our Customers</a></li>
+                    <li><a href='#'>Technology</a></li>
+                    <li><a href='#'>Our Approach</a></li>
+                </ul>
+            </li>
+            <li>
+                <h4>Qick Links</h4>
+                <ul>
+                    <li><a href='#'>Our Customers</a></li>
+                    <li><a href='#'>Technology</a></li>
+                    <li><a href='#'>Our Approach</a></li>
+                </ul>
+            </li>
+            <li>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href='#'>Our Customers</a></li>
+                    <li><a href='#'>Technology</a></li>
+                    <li><a href='#'>Our Approach</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class='newsletter'>
+            <form>
+                <span class='head-n'>Sign Up For Newsletter Now</span><br>
+                <span class='text'>Daily news delivered direct to your inbox</span>
+                <input type='text' onfocus="if(this.value=='Your email address')this.value='';" onblur="if(this.value=='')this.value='Your email address';" value="Your email address" maxlength="100">
+                <input class='submit' type='submit' value='Sign Up'>
+            </form>
+        </div>
+    </div>
+    <div class='copy-rights'>
+        <p>Copyright &copy; 2012 Vizz Net. All Rights Reserved.</p>
+        <ul class='copy-menu'>
+            <li><a href='#'>Privacy<a></li>
+            <li><a href='#'>Terms &amp; Conditions</a></li>
+            <li><a href='#'>Sitemap</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

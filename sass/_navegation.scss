@@ -1,0 +1,95 @@
+/* ======================NAVEGATION ======================= */
+@import "compass/css3";
+$float-left:left;
+$float-right:right;
+$font-medium:14px;
+$font-big:24px;
+$li-width:105px;
+$color-menu:#727071;
+#head{
+	float:$float-left;
+	width:100%; 
+	overflow: visible;
+    position: relative;
+	z-index: 1;
+	padding:0;
+	height:200px;
+	#logo_karen{
+		background-image: url("../img/Karen_logo.png");
+		background-repeat: no-repeat;
+		width: 400px;
+		height: 98px;
+		float: $float-left;
+		margin: 0;
+		z-index: 100;
+	}
+	@function white($opacity){
+		@return rgba(255,255,255,$opacity);
+	}
+	@mixin rounded-corners($radius) {
+	  -webkit-border-radius: $radius;
+	  -moz-border-radius: $radius;                                                                                                                 
+	  border-radius: $radius;
+	}
+	@mixin button-style($width,$height) {
+	  height:$height;
+	  width:$width;
+	  @include rounded-corners(5px);
+	  @include box-shadow(10px, 10px, 3px, 0, #000);
+	}
+	@mixin box-color(){
+		float:left;
+		padding: 13px 0 0 0;
+		margin-top:16px;
+	}
+	@mixin menu-li($type){
+		@if $type==last{
+			border-right:none;
+			width:124px;
+		}@else{
+			border-right:1px solid #727071;
+			width:$li-width;
+		}
+		float:left;
+		text-align:center
+	}
+	@mixin box-shadow($h, $v, $radius, $spread, $color) {
+  -webkit-box-shadow: $h $v $radius $spread $color;
+  -moz-box-shadow: $h $v $radius $spread $color;
+  box-shadow: $h $v $radius $spread $color;
+}
+	#menu{
+		float:$float-right;
+		@include button-style(340px,54px);
+		margin-top:-10px;
+		/* needs latest Compass, add '@import "compass"' to your scss*/
+		background-color: #f6f8f9; // Old browsers
+		@include filter-gradient(#f6f8f9, #f5f7f9, vertical); // IE6-9
+		@include background-image(linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%));
+		ul{
+			@include box-color();
+			
+			li{
+				@include menu-li(normal);
+				a{
+					color:$color-menu;
+					font-size:$font-medium;
+					&:hover{
+						
+					}
+					
+				}
+			}
+			.last{
+				@include menu-li(last);
+			}
+		}
+	}
+}
+.nothing{float:$float-left;visibility:hidden;display:none;}
+/* ======================FOOTER =======================*/
+$margin-top-foot:50px;
+#foot-nav{
+	float:$float-left;
+	margin-top:$margin-top-foot;
+}

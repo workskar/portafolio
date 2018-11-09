@@ -1,0 +1,199 @@
+/* DESCRIPTION */
+/* _______________________________________________ */
+
+$white:#fff;
+$black:#000;
+@mixin description(){
+	width :400px;
+	height :300px;
+}
+@mixin carousel-position($type){
+	@if $type==carousel{
+		margin :20px auto;
+		width :930px;
+		height :auto;
+	} @else{
+		float :left ;
+		margin :0;
+		padding :0;
+		list-style :none;
+	}
+	position :relative ;
+	overflow :visible ;
+	border :none;
+}
+@mixin slideItem($type){
+	@if $type==a{
+		display: block ;
+		text-decoration :none;
+		outline :none;
+	}@else if $type==img{
+		width :100%;
+		height :100%;
+	}@else{
+		position :absolute ;
+		cursor :pointer ;
+		overflow : hidden;
+	}
+	margin :0;
+	padding :0;
+	border :none;
+}
+@mixin button($but){
+	@if $but==next{
+		right :10px;
+		background : url("images/next_button.png") no-repeat center;
+		
+	}@else if $but==prev{
+		left :10px;
+		background : url("images/prev_button.png");
+	}
+	position :absolute ;
+	width :35px;
+	height :35px;
+	cursor :pointer ;
+	z-index :9999;
+	top :133px;		
+}
+@mixin nav($nav){
+	@if $nav==numbers{
+		color : #828282 ;
+		font-weight :bold ;
+		text-decoration :none;
+		font-size :1em;
+		font-family :Arial, Verdana ;
+	}@else if $nav==bullet{
+		width :16px;
+		height :16px;
+		background : url(../img/Bullet-White.png) no-repeat center ;
+	}
+	position :relative ;
+	float :left ;
+	margin :5px;
+	cursor :pointer ;
+}
+@mixin shadow-orientation($shadow){
+	@if $shadow==left{
+		background : url("images/shadowLeft.png") no-repeat;
+		width :100px;
+		/* fix png problems in ie */
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; /* IE8 */   
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);   /* IE6 & 7 */ 
+	}@else if $shadow==middle{
+		background:url("images/shadowTile.png") repeat-x;
+		/* fix png problems in ie */
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; /* IE8 */   
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);   /* IE6 & 7 */ 
+	}@else{
+		width :100px;
+		background:url("images/shadowRight.png") no-repeat;
+		/* fix png problems in ie */
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; /* IE8 */   
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);   /* IE6 & 7 */ 
+	}
+	height :82px;
+}
+@mixin title-des($type){
+	@if $type==h2{
+		margin-bottom:5px;
+	}@else if $type==h3{
+		font-size:13.5px; 
+		margin-bottom:15px;
+	}
+	color:#fff;
+}
+.carousel{
+	@include carousel-position(carousel);
+	.slides{
+		@include carousel-position(slides);
+		.slideItem{
+			@include slideItem(slideItem);
+			a{
+				@include slideItem(a);
+			}
+			img{
+				@include slideItem(img);
+			}
+		}
+		.videoOverlay{
+			background :url("images/video.png") no-repeat center; /* play button */
+		}
+		.spinner{
+			background : #000 url(images/loading.gif) no-repeat center; /* video preloader */
+		}
+	}
+	.buttonNav{
+		position : relative ;
+		margin :0 auto;
+		z-index :999;
+		.numbers{
+			@include nav(numbers);
+			&:hover{color:$black;text-decoration:underline;}
+		}
+		.numberActive{
+			background : none;
+			color :$black;
+			cursor :default ;
+		}
+		.bullet{
+			@include nav(bullet);
+			&:hover{
+				background : url(../img/Bullet-Black.png) no-repeat center ;
+			}
+		}
+		.bulletActive{
+			background : url(../img/Bullet-Black.png) no-repeat center ;
+			cursor :default ;
+		}
+	}
+	.nextButton{
+		@include button(next);
+	}
+	.prevButton{
+		@include button(prev);
+	}
+	.description{
+		@include description();
+		position :relative ;
+		float :left ;
+		margin :0;
+		margin-left :30px;
+		padding :0px;
+		h2{
+			@include title-des(h2);
+		}
+		h3{
+			@include title-des(h3);
+		}
+		.linkWeb{
+			margin-top:38px;
+			float:left;
+			text-decoration:underline;
+			&:hover{
+				text-decoration:none;
+			}
+		}
+		p{
+			color:$white;
+		}
+		div{
+			@include description();
+		}
+	}
+	.shadow{
+		width :100%;
+		height :82px;
+		.shadowLeft{
+			@include shadow-orientation(left);
+		}
+		.shadowMiddle{
+			@include shadow-orientation(middle);
+		}
+		.shadowRight{
+			@include shadow-orientation(right);
+		}
+	}
+	.gradient{
+		background-image :url(scripts/gradient.svg);
+	}
+}

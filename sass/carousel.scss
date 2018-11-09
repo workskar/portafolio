@@ -1,0 +1,173 @@
+/* ======================CAROUSEL =======================*/
+$black:#000;
+/* SCSS Document */
+@mixin carousel-position($type){
+	@if $type==slideItem{
+		position:absolute;
+		cursor:pointer ; 
+		overflow: hidden;
+	} @else{
+		position:relative;
+		overflow:visible ;
+	}
+	border:none;
+}
+@mixin margins($type){
+	@if $type==carousel{
+		margin:0 auto;
+	} @else {
+		margin:0;
+		padding:0;
+	}
+}
+@mixin shadowD($direction){
+	@if $direction==left{
+		background : url("images/shadowLeft.png") no-repeat;
+		width :100px;
+		/* fix png problems in ie */
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; 
+		/* IE8 */   
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);   
+		/* IE6 & 7 */                     
+	}@else if $direction==middle{
+		background:url("images/shadowTile.png") repeat-x;
+		/* fix png problems in ie */
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; 
+		/* IE8 */   
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);   
+		/* IE6 & 7 */   
+	}@else{
+		width :100px;
+		background:url("images/shadowRight.png") no-repeat;
+		/* fix png problems in ie */
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; 
+		/* IE8 */   
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);   
+		/* IE6 & 7 */
+	}
+	height :82px;
+}
+.carousel{
+	@include carousel-position(carousel);
+	@include margins(carousel);
+	width:930px;
+	height:auto;
+	/* slide container */
+	.slides{
+		@include carousel-position(slides);
+		@include margins(slides);
+		list-style:none;
+		/* slide item */
+		.slideItem{
+			@include carousel-position(slideItem);
+			@include margins(slideItem);
+			a{
+				@include margins(a);
+				display:block;
+				text-decoration:none;
+				border:none;
+				outline:none;
+			}
+			img{
+				@include margins(img);
+				border:none;
+				width:100%;
+				height:100%;
+			}
+		}
+		.videoOverlay{
+			background :url("images/video.png") no-repeat center; /* play button */
+		}
+		.spinner{
+			background : #000 url(images/loading.gif) no-repeat center; /* video preloader */
+		}
+	}
+	.shadow{
+		width :100%;
+		height :82px;
+		.shadowLeft{
+			@include shadowD(left);
+		}
+		.shadowMiddle{
+			@include shadowD(middle);
+		}
+		.shadowRight{
+			@include shadowD(right);
+		}
+	}
+	.gradient{
+		background-image :url(scripts/gradient.svg);
+	}
+}
+/* DIRECTION BUTTON */
+/* _______________________________________________ */
+@mixin button($button){
+ 	@if $button == next{
+		right:10px;
+		background:url("../img/next_button.png") no-repeat center;
+	} @else{
+		left:10px;
+		background : url("../img/prev_button.png");
+	}
+	position:absolute;
+	top:133px;
+	width:35px;
+	height:35px;
+	cursor:pointer;
+	z-index: 9999;
+}
+@mixin buttonNav($nav){
+	@if $nav == numbers{
+		color : #828282 ;
+		font-weight :bold ;
+		text-decoration :none;
+		font-size :1em;
+		font-family :Arial, Verdana ;
+	} @else{
+		width :16px;
+		height :16px;
+		background : url(images/Bullet-White.png) no-repeat center ;
+	}
+	position :relative ;
+	float :left ;
+	margin :5px;
+	cursor :pointer ;
+}
+.carousel{
+	.nextButton{
+		@include button(next);
+	}
+	.prevButton{
+		@include button(prev);
+	}
+	.buttonNav{
+		position:relative;
+		margin:0 auto;
+		z-index:999;
+		/* numbers */
+		.numbers{
+			@include buttonNav(numbers);
+			&:hover{
+				color:$black;
+				text-decoration:underline;
+			}
+		}
+		.numberActive{
+			background : none;
+			color :$black;
+			cursor :default ;
+		}
+		.bullet{
+			@include buttonNav(bullet);
+			&:hover{
+				background : url(images/Bullet-Black.png) no-repeat center ;
+			}
+		}
+		.bulletActive{
+			background : url(images/Bullet-Black.png) no-repeat center ;
+			cursor :default ;
+		}
+	}
+}
+
+

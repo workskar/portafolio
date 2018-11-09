@@ -1,0 +1,39 @@
+/* ======================CONTENT =======================*/
+.main_container {
+  width: 930px;
+  height: 366px;
+  margin: 0 25px;
+  float: left; }
+  .main_container .cont-carousl {
+    float: left; }
+  .main_container #centre-me {
+    overflow: hidden; }
+
+.main_project {
+  width: 930px;
+  height: 405px;
+  margin: 0 25px;
+  float: left; }
+  .main_project .cont-project {
+    display: inline;
+    float: left;
+    position: relative;
+    padding: 20px 0 15px 0;
+    background-color: #403e3e; }
+
+#project {
+  overflow: hidden; }
+  #project .close {
+    float: left;
+    position: absolute;
+    right: 4px;
+    top: 5px;
+    z-index: 1000; }
+    #project .close .close-project {
+      background: url(../img/close.jpg) no-repeat;
+      width: 28px;
+      height: 28px;
+      text-indent: 110%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block; }

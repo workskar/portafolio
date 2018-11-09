@@ -1,0 +1,173 @@
+/* ======================NAVEGATION ======================= */
+@import "compass/css3";
+@import "animate";
+$float-left:left;
+$float-right:right;
+$font-medium:14px;
+$font-big:18.5px;
+$font-small:11px;
+$li-width:105px;
+$color-menu:#727071;
+@function get-color($color){
+	@if $color==grey{
+		$color:#727071;
+	}@else if $color==pink{
+		$color:#EC008C;
+	}
+	@return $color;
+}
+@mixin rounded-corners($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;                                                                                                                 
+	border-radius: $radius;
+}
+@mixin button-style($width,$height) {
+	height:$height;
+	width:$width;
+	@include rounded-corners(5px);
+}
+@mixin box-color(){
+	float:left;
+	padding: 13px 0 0 0;
+	margin-top:16px;
+}
+@mixin menu-li($type){
+	@if $type==last{
+		border-right:none;
+		width:124px;
+	}@else{
+		border-right:1px solid get-color(grey);
+		width:$li-width;
+	}
+	float:left;
+	text-align:center
+}
+@mixin box-shadow($h, $v, $radius, $spread, $color) {
+	-webkit-box-shadow: $h $v $radius $spread $color;
+	-moz-box-shadow: $h $v $radius $spread $color;
+	box-shadow: $h $v $radius $spread $color;
+}
+@mixin box-head-foot($type){
+	@if $type==head{
+		overflow: visible;
+		position: relative;
+		z-index: 1;
+		padding:0;
+		height:213px;
+	}@else if $type==foot{
+		margin-top:$margin-top-foot;
+	}
+	float:$float-left;
+	width:100%;
+}
+@mixin box-gradient(){
+	/* needs latest Compass, add '@import "compass"' to your scss*/
+	background-color: #f6f8f9; // Old browsers
+	@include filter-gradient(#f6f8f9, #f5f7f9, vertical); // IE6-9
+	@include background-image(linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%));
+}
+#head{
+	@include box-head-foot(head);
+	#logo_karen{
+		background-image: url("../img/Karen_logo.png");
+		background-repeat: no-repeat;
+		width: 400px;
+		height: 98px;
+		float: $float-left;
+		margin: 0;
+		z-index: 100;
+	}
+	#menu{
+		float:$float-right;
+		@include button-style(340px,54px);
+		@include box-shadow(10px, 10px, 3px, 0, #464445);
+		margin-top:-10px;
+		@include box-gradient();
+		ul{
+			@include box-color();
+			li{
+				@include menu-li(normal);
+				a{
+					color:get-color(grey);
+					font-size:$font-normal;
+					opacity: 1.0;
+					-webkit-transition: opacity 0.4s linear;
+					font-weight:bold;
+					&:hover{
+						opacity: 0.7;
+					}
+					
+				}
+			}
+			.last{
+				@include menu-li(last);
+			}
+		}
+	}
+}
+.nothing{float:$float-left;visibility:hidden;display:none;}
+/* ======================FOOTER =======================*/
+$margin-top-foot:110px;
+@mixin hide-text(){
+	white-space:nowrap;
+	overflow:hidden;
+	text-indent:110%
+}
+@mixin social-icon($x,$y){
+	background:url(../img/linkedin.png) $x $y;
+	width:45px;
+	height:40px;
+	float:left;
+}
+@mixin animation-m($name,$duration,$delay,$function,$mode){
+	-moz-animation: $name $duration $delay $function $mode;
+    -webkit-animation: $name $duration $delay $function $mode;
+    -o-animation: $name $duration $delay $function $mode;
+    -ms-animation: $name $duration $delay $function $mode;
+    -khtml-animation: $name $duration $delay $function $mode;
+    animation: $name $duration $delay $function $mode;
+}
+#foot-nav{
+	@include box-head-foot(foot);
+	position:relative;
+	.right-side{
+		padding:15px;
+		position:absolute;
+		@include button-style(310px,125px);
+		@include box-gradient();
+		@include box-shadow(10px, 10px, 3px, 0, #2d2b2c);
+		@include animation-m(bounceInLeft,2s,1s,ease,both);
+		left:65.4%;
+		p{
+			margin:10px 0;
+		}
+		.social{
+			float:right;
+			margin-top:18px;
+			li{
+				float:left;
+				margin-left:10px;
+				.mobil{
+					font-size:$font-big;
+					line-height:39px;
+					color:get-color(grey);
+				}
+				.linkein{
+					@include hide-text();
+					@include social-icon(0,-40px);
+					&:hover{
+						@include social-icon(0,0);
+					}
+				}
+			}
+		}
+	}
+	.left-side{
+		float:left;
+		p{
+			margin-top:195px;
+			color:get-color(grey);
+			font-size:$font-small;
+		}
+	}
+}

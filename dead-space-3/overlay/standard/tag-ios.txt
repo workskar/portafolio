@@ -1,0 +1,24 @@
+<div ad-container-id="dead-space-3"></div>
+<script src="http://4sa.s3.amazonaws.com/ad-units/dead-space-3/scripts/standard/ad-template.js" type="text/javascript"></script>
+<script src="http://4sa.s3.amazonaws.com/ad-units/dead-space-3/scripts/standard/ad-unit.js" type="text/javascript"></script>
+<script type="text/javascript">
+	adUnit = new AdUnit();
+	adUnit.adId = 'dead-space-3';
+	adUnit.adEnvironment = 'production';
+	adUnit.adOverlay = true;
+	adUnit.clickUrl = '{clickurl}';
+	adUnit.collapsedAdWidth = 320;
+	adUnit.collapsedAdHeight = 50;
+	adUnit.expandedAdWidth = 320;
+	adUnit.expandedAdHeight = 480;
+	adUnit.autoProgressBar = true;
+	adUnit.isAndroid = false;
+	adUnit.adFormat = "standard";
+	adUnit.adOrientation = 'portrait';
+	adUnit.isRetina = true;
+	adUnit.adEventTracker = new AdMarvelAdEventTracker({partnerId:'{partnerid}', siteId: '{zoneid}', bannerId:'{bannerid}', targetParams: '{targetparams}', cacheBuster:'{timestamp}'});
+	adUnit.cacheBusterToken = '{timestamp}';
+	adUnit.publisherAdjustCollapsed = {left:10, top:0};
+	adUnit.publisherAdjustExpanded= {left:0, top:0};
+	adUnit.initialiseTemplate();
+</script>

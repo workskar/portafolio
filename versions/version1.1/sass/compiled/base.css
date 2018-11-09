@@ -1,0 +1,8 @@
+/* ======================LAYOUT =======================*/
+body {
+  background: url(../img/homev2.jpg) 50% 0 no-repeat;
+  background-color: #403e3e;
+  overflow-x: hidden;
+  height: 100%;
+  width: 980px;
+  margin: 0 auto; }

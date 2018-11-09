@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>dead-space-3-overlay-sample</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    
+    <style type="text/css">
+		body {
+			margin: 0px;
+			padding: 0px;
+		}
+		#sample-div {
+			background: url('http://4sa.s3.amazonaws.com/common-assets/sample-bg/fpp-mobile-v04.png') 0px 0px no-repeat;
+			background-size:320px 820px;
+			width: 320px;
+			height: 820px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<div ad-container-id="dead-space-3"></div>
+<!--<script src="http://4sa.s3.amazonaws.com/ad-templates/rich-media/v5.0/ad-template.js" type="text/javascript"></script>
+<script src="http://4sa.s3.amazonaws.com/ad-units/dead-space-3/scripts/standard/ad-unit.js" type="text/javascript"></script>-->
+<script src="../../scripts/standard/ad-template.js" type="text/javascript"></script>
+<script src="../../scripts/standard/ad-unit.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	var ua = navigator.userAgent.toLowerCase();
+	isAndroidDevice = ua.indexOf("android") > -1; 
+	
+	adUnit = new AdUnit();
+	adUnit.adId = 'dead-space-3';
+	adUnit.adEnvironment = 'local';
+	adUnit.adOverlay = true;
+	adUnit.clickUrl = '{clickurl}';
+	adUnit.collapsedAdWidth = 320;
+	adUnit.collapsedAdHeight = 50;
+	adUnit.expandedAdWidth = 320;
+	adUnit.expandedAdHeight = 480;
+	adUnit.autoProgressBar = true;
+	adUnit.isAndroid = isAndroidDevice;
+	adUnit.adFormat = "standard";
+	adUnit.adOrientation = 'portrait';
+	adUnit.isRetina = true;
+	adUnit.adEventTracker = new AdMarvelAdEventTracker({partnerId:'{partnerid}', siteId: '{zoneid}', bannerId:'{bannerid}', targetParams: '{targetparams}', cacheBuster:'{timestamp}'});
+	adUnit.cacheBusterToken = '{timestamp}';
+	adUnit.publisherAdjustCollapsed = {left:0, top:0};
+	adUnit.publisherAdjustExpanded= {left:0, top:0};
+	adUnit.initialiseTemplate();
+</script>
+<div id="sample-div">&nbsp;</div>
+</body>
+</html>

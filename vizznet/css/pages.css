@@ -1,0 +1,537 @@
+/* ======================SUB NAVEGATION =======================*/ 
+#sub-menuvizz{width:1000px;background-color:#e2e1e6;float:left;height:25px;margin-bottom:15px;}
+#sub-menuvizz ul li,#sub-menuvizz ul{float:left;}
+#sub-menuvizz ul{margin-top:5px;}
+#sub-menuvizz ul li a{font-size:12px;}
+#sub-menuvizz ul li a,#sub-menuvizz ul li span.separator{color:#828282;}
+#sub-menuvizz ul li.first{margin-left:24px;}
+#sub-menuvizz ul li{
+	background-image:url("../img/bullet-header.png");
+	background-attachment: scroll;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+	padding-right:13px;
+	margin-right:5px;
+}
+#sub-menuvizz ul li.last{background-image:none;}
+.check-availability #sub-menuvizz ul li a.check-av,.choose-option #sub-menuvizz ul li a.choose-op,#sub-menuvizz ul li a:hover,
+.personal-info #sub-menuvizz ul li a.aboutyou,.your-details #sub-menuvizz ul li a.your-de,.payment-details #sub-menuvizz ul li a.payment-de,
+.add-ons #sub-menuvizz ul li a.addons,.select-broadband #sub-menuvizz ul li a.choose-op,.check-by-phone #sub-menuvizz ul li a.check-av
+{color:#FF0000;}
+/* ======================PAGES COMMON=======================*/
+.about-us #content,.about-us #right-col,
+.product #content,.product #right-col,
+.offers #content,.offers #right-col,
+.contact-us #content,.contact-us #right-col,
+.switch-provider #content,.switch-provider #right-col,
+.login #content,.login #right-col,
+.privacy #content,.privacy #right-col,
+.terms #content,.terms #right-col,
+.sitemap #content,.sitemap #right-col,
+.help #content,.help #right-col,
+.rss #content,.rss #right-col,
+.self-care #content,.self-care #right-col,
+.newsletter #content,.newsletter #right-col,
+.troubleshooting #content,.troubleshooting #right-col,
+.speed-estimation #content,.speed-estimation #right-col,
+.customer-details  #content,.customer-details #right-col
+.customer-details  #content,.customer-details #right-col,
+.payment-history #content,.payment-history #right-col,
+.myaccount #content,.myaccount #right-col,
+.personal-info #content,.personal-info #right-col
+{margin-top:15px;}
+.switch-provider #content,.about-us #content,.troubleshooting #content,.speed-estimation #content{width:669px;}
+#content a:hover{text-decoration:underline;}
+#main .center-image{float:left;height:309px;width:1000px;}
+span.separator{font-size:8px;}
+.return1{width:245px;display:none;}
+.btn-small,.btn-grey,#fa-button,#returnbtn,#fa-button-big{
+	height:25px;
+	color:#fff;
+	font: bold 12px Arial, verdana, Helvetica, sans-serif;
+	border-style:none;
+	cursor:pointer;
+	margin:0;
+	border:none;
+}
+.btn-small{
+	background-image:url("../img/login-off.jpg");
+	width:66px;
+}
+.btn-grey,#fa-button,#returnbtn{
+	background-image:url("../img/find-off.jpg");
+	width:86px;
+}
+#fa-button-big{
+	background-image:url("../img/grey-off.jpg");
+	width:124px;
+}
+#fa-button-big:hover{background-image:url("../img/grey-on.jpg");}
+.btn-grey:hover,#fa-button:hover,#returnbtn:hover{background-image:url("../img/find-on.jpg");}
+.btn-small:hover{background-image:url("../img/login-on.jpg");}
+@-moz-document url-prefix() {
+	  .btn-grey,.btn-small,#fa-button,#returnbtn,#fa-button-big{
+		padding-bottom:5px;
+	  }
+}
+#content .box-checkA{
+	float:left;
+	width:500px;
+	height:auto;
+	border:2px solid #e2e2e2;
+	padding:15px 0 0 15px;
+}
+#content .box-section{
+	float:left;
+	width:483px;
+	border-bottom:1px solid #e2e2e2;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+.prfo-small{font-size:11px;}
+#content .last-file{border-bottom:none;}
+#content h2.second{margin-bottom:25px;}
+.box-section dt,.display li,.display,.row-li,.label-jsp,.txt-jspinput,.checkbox-jsp{float:left;}
+input.txt-input,.your-details .display li,.check-by-phone .display li{width:275px;}
+#content input[type='text'],#content input[type='password'],#content select,#content .txt-jspinput,
+#content .checkbox-jsp, #content textarea
+{border:1px solid #625c60;height:25px;}
+#content select{padding:2px;}
+.ToolText,.ToolTextHover{position:relative;}
+.ToolText span{display:none;}
+.ToolTextHover span{
+	border: 1px solid #ccc;
+	position: absolute;
+	text-align: left;
+	top: 18px;
+	width: 150px;
+	background-color:#EFEFEF;
+	padding:5px;
+}
+.label-jsp,.check-by-phone .display .label-jsp{width:177px}
+.txt-jspinput{width:275px;}
+.doblerow{margin-top:15px;}
+#content .checkbox-jsp{height:10px;width:10px;padding:2px;}
+.redstar{color:#FF0000;font:bold 18px Arial;}
+.error{color:#FF0000;}
+.halfcol-left,.halfcol-right{float:left;}
+.alpha{list-style-type:lower-alpha;}
+.link{
+	padding: 3px 14px 2px 6px;
+	background:url(../img/red_green_pager.png) no-repeat 0 0;
+	float:left;
+	padding-left:30px;
+}
+
+/* ======================CHECK-AVAILABILITY=======================*/
+.check-availability #content .box-checkA{height:250px;}
+#content p{margin:10px 0;}
+#content h1{font-size:18px;margin-bottom:0;}
+.check-availability #content h2,.select-broadband #content h2,.add-ons #content h2,
+.personal-info #content h2,.your-details #content h2,.payment-details #content h2,
+.check-by-phone #content h2,.help #content h2,.myaccount #content h2,.payment-history #content h2
+{font-size:14px;color:#7d7d7d;margin-top:5px;}
+.check-availability .box-checkA form{margin-top:15px;float:left;width:490px;}
+.check-availability .box-checkA form label{font-weight:bold;}
+.check-availability .box-checkA form li{margin-bottom:5px;}
+.check-availability .box-checkA form  li .btn-grey{margin-left:10px;}
+.box-checkA .btn-small{float:right;margin-top:10px;}
+/* ======================CHOOSE OPTION=======================*/
+.choose-option #content .box-checkA,.about-you #content .box-checkA,.your-details #content .box-checkA,.myaccount #content .box-checkA
+{height:auto;}
+.box-section  dl.speed-results{margin-top:8px;}
+.box-section  dl.speed-results dt,.about-you #content .box-section dd{font-weight:bold;margin-right:3px;}
+#content .box-section p.nextp{margin-top:0;margin-bottom:15px;}
+#content .box-section a{text-decoration:underline;}
+.choose-option .box-section .contract-opc li,.choose-option .box-section .contract-opc,
+.about-you .box-section li,.select-broadband .box-section .contract-opc li
+{float:left;}
+.choose-option .box-section .contract-opc{width:454px;}
+.choose-option .box-section .contract-opc li{width:434px;margin-bottom:10px;}
+.choose-option .box-section .contract-opc .radio{width:20px;}
+.baskets h3,.baskets h2,.baskets dl{margin-left:7px;}
+.choose-option .box-section h3{margin-bottom:6px;}
+/* ======================ABOUT YOU=======================*/
+.about-you #content .box-section h2{color:#ff0000;}
+.about-you #content .box-section li.dscription,.box-checkA .display li.description{width:200px;margin-right:5px;}
+.about-you #content .box-section li,.your-details .display li{margin-bottom:10px;}
+.about-you .box-section dt{width:200px;}
+.about-you #content .box-section dl{margin-bottom:15px;}
+/* ======================YOUR DETAILS=======================*/
+.your-details .display li.description label{line-height:2em;}
+.your-details .box-checkA .display{margin-bottom:30px;}
+.your-details .box-checkA  h3{margin-bottom:15px;}
+.your-details #content .box-checkA p{margin:10px 0;}
+.term-cond{
+	padding: 5px;
+    height: 150px;
+    overflow: auto;
+	margin: 5px 5px 10px 5px;
+}
+div.message-attention,.term-cond{
+	width:477px; 
+	border: 1px solid #ccc;
+    background: #efefef none;
+}
+div.terms-style ul {list-style: inside;padding-left:2em;margin-bottom:15px;}
+div.terms-style ul li,div.terms-style ol ol li,div.terms-style ol li{margin-bottom:5px;}
+div.terms-style ol{margin-left:30px;}
+div.terms-style ol ol{list-style-type:lower-alpha;}
+.your-details .box-checkA div.terms-style h3{margin:10px 0 5px 0;}
+div.message-attention{color:#ff0000;height:35px;padding:14px 5px 0 5px;}
+div.message-attention input[type='checkbox']{margin-right:5px;}
+.your-details .box-checkA form .btn-small{margin-right:10px;margin-bottom:20px;}
+/* ======================PERSONAL INFO=======================*/
+.personal-info .box-checkA ul{float:left;}
+.personal-info .box-checkA ul .row-li{width:485px;margin-bottom:10px;}
+/*.personal-info #content .select-jsp{display:none;}*/
+.personal-info .row-li .btn-small{float:right;margin-left:5px;display:none;}
+.personal-info .li-list .label-jsp{width:80px;}
+.personal-info .li-list,.personal-info .li-list li{width:275px;}
+.personal-info .li-list li{float:left;margin-bottom:5px;}
+.personal-info  #content .select-jsp{width:214px;}
+.personal-info #content .small-ipt{width:176px;}
+.personal-info #fa-button{margin-left:13px;}
+.personal-info .box-checkA table thead tr{margin-bottom:5px;font-weight:bold;}
+.personal-info .box-checkA table td.bigcel{width:130px;padding-right:5px;}
+.personal-info .box-checkA table td.smallcel{width:75px;}
+.personal-info .box-checkA table td.medcel{width:90px;}
+.personal-info .box-checkA table td{border:1px solid #E2E2E2;}
+/* ======================PERSONAL INFO=======================*/
+.select-broadband .box-section dl.speed-results{width:320px;}
+.select-broadband .box-section dl.speed-results dd{float:left;}
+.select-broadband .box-section .contract-opc{margin-top:8px;}
+.select-broadband .box-section dl.speed-results dt{width:113px;}
+/* ======================SELECT BROADBAND=======================*/
+.select-broadband .box-section .contract-opc li{width:483px;margin-bottom:10px;}
+.select-broadband .contract-opc .boldp,.select-broadband #summary .boldp{float:left;}
+.select-broadband .contract-opc .boldp{width:306px;}
+.select-broadband #summary .label-jsp{width:135px;margin-right:5px;}
+.select-broadband #summary .label-jsp,.select-broadband #summary .boldp{margin-bottom:5px;}
+/* ======================SELECT PRODUCT=======================*/
+.select-product .box-section .contract-opc li,.check-by-phone .box-section .display li{margin-bottom:10px;}
+/* ======================MYACCOUNT=======================*/
+.celred{background-color:#fa0003;color:#fff;}
+.myaccount .estimate .nobold{font-weight:normal;}
+.myaccount .estimate .celgray{background-color:#e2e2e2;height:130px;color:#a0a0a0;}
+.myaccount #content .box-checkA{width:445px;}
+.myaccount #content .box-section{width:430px;}
+.myaccount h3{margin-bottom:10px;}
+.myaccount #content .box-checkA p{margin-right:10px;}
+.myaccount .box-section dl.speed-results dt{width:150px;font-weight:normal;}
+.myaccount .box-section dl.speed-results dd{width:274px;font-weight:bold;}
+.myaccount .box-section dl.speed-results dd.nocontent{height:16px;}
+.sectionResul,.subsecResul{margin-top:10px;}
+.myaccount .box-section dl.speed-results dt,.myaccount .box-section dl.speed-results dd{margin-bottom:8px;float:left;}
+.myaccount .box-section dl.speed-results{float:left;}
+.myaccount .estimate{float:left;margin-left:25px;}
+.myaccount .estimate li{width:185px;height:30px;text-align:center;}
+.myaccount .estimate li span{font-size:15.5px;font-weight:bold;line-height:2em;}
+.myaccount .estimate .celgray span{line-height:8em;}
+.myaccount  #content .box-section a.linkM{float:right;}
+.myaccount h4{margin-bottom:8px;}
+/* ======================PAYMENT HISTORY=======================*/
+.payment-history table{float:left;}
+.payment-history td.frstCell,#lastBill thead tr td{padding-left:15px;}
+.payment-history tr td{height:25px;}
+.payment-history tr.space td{height:10px;}
+.payment-history .greyHead td,#lastBill thead tr td{color:#fff;font-weight:bold;}
+.payment-history .greyHead{background-color:#9c9c9c;}
+.payment-history .greyBody{background-color:#e2e2e2;}
+.payment-history .greyHead td.medCell{width:230px;}
+.payment-history .greyHead td.frstCell{width:290px;}
+.payment-history .greyHead td.lastCell{width:150px;}
+.payment-history #lastBill .greyHead td.medCell{width:150px;}
+.payment-history #lastBill .greyHead td.frstCell{width:150px;}
+.payment-history #lastBill .greyHead td.lastCell{width:90px;}
+.payment-history td.bld{font-weight:bold;}
+.payment-history .bills{float:left;background-color:#e2e2e2;height:150px;margin-right:5px;}
+.payment-history .bills li.celred{font-weight:bold;}
+.payment-history #note,.payment-history #note1{margin-right:16px;color:#fff;text-decoration:underline;cursor:pointer;}
+.payment-history #heading #note{float:right;margin-right:10px;}
+.payment-history .DownPrint a{color:#000;text-decoration:underline;margin-left:10px;cursor:pointer;}
+.payment-history #lastBill .DownPrint{text-align:right;margin-right:5px;}
+.payment-history .bills li{width:200px;padding-left:10px;margin-bottom:10px;height:27px;line-height:1.8em;}
+.payment-history #content .bills select{margin:0 5px;}
+.clear{clear:both;}
+.payment-history .clear{height:10px;}
+.payment-history .bills .boldp,.payment-history .bills .red{font-size:16px}
+.payment-history #heading{width:677px;padding-left:13px;height:27px;}
+.payment-history #heading p,.payment-history #heading a{float:left;margin:5px 0 0 0;}
+.payment-history #heading p{font-weight:bold;}
+#lastBill thead tr td{background-color: #FA0003;}
+.payment-history .alignR{text-align:right;}
+/* ======================rightColumnOuter scrolling=======================*/
+#boxes {
+	float:right;
+	position:relative;
+	width:200px;
+}
+#rightColumnOuter{position:relative;}
+.baskets{
+	border:1px solid #ff0000;
+	padding:10px 0;
+}
+#rightColumnOuter h2{color:#ff0000;}
+div#wrapperDiv{
+	height: auto;
+	min-height: 700px;
+	_height:700px;
+	float:left;
+}
+.popUpContent div#wrapperDiv {min-height: 1px;}
+#rightColumnOuter dl {
+	float:left;
+	position:relative;
+	margin-top:5px;
+	font-size:12px;
+	color:#666;
+}
+#rightColumnOuter dt,#rightColumnOuter dd{
+	float:left;
+	padding:0 0 10px 0;
+}
+#rightColumnOuter dt {width:179px;}
+#rightColumnOuter dd {
+	text-align:right;
+	width:40px;
+}
+#rightColumnOuter h3.payMont{
+	background-color:#e2e2e2;
+	width:191px;
+	height:20px;
+	color:#000;
+	font-weight:bold;
+	float:left;
+	margin-left:0;
+	padding-left:7px;
+	line-height:1.5em;
+}
+#rightColumnOuter {width:200px;position:absolute;}
+#rightColumnOuter.scrolling{position:fixed;top:10px;}
+#rightColumnOuter dt.totalRow, #rightColumnOuter dd.totalRow {
+	font-weight:bold;
+	color:#ff0000;
+}
+/* ======================LOGIN=======================*/
+.login #content .box-checkA{width:270px;padding-right:15px;margin-top:25px;height:200px;}
+.login #content .float-right{margin-left:25px;}
+.login #content .box-checkA h3{margin-bottom:15px;}
+.login .box-checkA .display{width:300px;}
+.login .box-checkA ul li{margin-bottom:10px;}
+.login input.txt-input,.login .box-checkA .display li{width:270px;}
+.login .box-checkA .specmar{margin-left:15px;margin-right:68px;}
+/* ======================CONTACT-US=======================*/
+.contact-us #content p{margin:5px 0;}
+.contact-us #col1-outer,.contact-us #col2-outer{float:left;}
+.contact-us #col1-outer{width:418px;padding:0 30px 0 0;border-right: 2px solid #d7d7d7;}
+.contact-us #col2-outer{width:200px;padding:0 0 0 30px;}
+.contact-us #contactfrm {
+    margin: 0;
+    padding: 0px;
+    width: 418px;
+}
+.contact-us #contactfrm li,.customer-details #contactfrm li { display: inline-block; width: 100%;margin-bottom:10px;}
+.contact-us #contactfrm label ,.customer-details #contactfrm label{
+    display: inline-block;
+    width: 138px;
+    height: 100%;
+    margin: 0 4px 0 0;
+	line-height:2em;
+    text-indent: 0px;
+}
+.contact-us .redstar,.customer-details .redstar{vertical-align: -10%;margin-left: 5px;}
+.contact-us #returnbtn { margin: 0 25px 0 0;float:right;}
+.contact-us #return1 { margin: 0;width:288px;} 
+.contact-us #fa-button{margin-left:42px;}
+.contact-us #contactfrm  input[type='text'],.customer-details #contactfrm  input[type='text']  {
+    width: 245px;
+}
+.contact-us #contactfrm textarea {
+    margin: 10px 0 0 0;
+    width: 256px;
+    height: 90px;
+    resize: none;
+	float:left;
+}
+.contact-us #contactfrm p.ta-label {
+    width: 140px;
+    float: left;
+    margin: 0px 4px 0 0;
+    height: 102px;
+	line-height:15.7em;
+    text-indent: 0px;		
+}
+.contact-us #subbuts,.customer-details #subbuts{text-align:center;}
+#content h2{color:#FF0000;margin:0 0 8px 0;}
+.contact-us #content .lastp{margin-bottom:15px;}
+.dohide {display: none;}
+.doshow {display: inline-block;}
+.val_error {
+  padding: 0;
+  margin: 1px 1px 1px 1px;
+  border-width: 2px 1px 2px 1px !important;
+  border-style:solid !important;
+  border-color: #f77 !important;
+  background-color: #faf0e7 !important;
+}
+.errmsg {
+  color: #a00;
+  font: normal 90%/100% arial, verdana, Helvetica, sans-serif;
+}
+span.val_error {
+  margin-left: 0010px;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+  overflow: hidden;
+  font: normal 90%/100% arial, verdana, Helvetica, sans-serif;
+  text-align: left;
+  color: #400;
+}
+.contact-us #returnbtn {display: none;}
+#addr_find{margin-bottom:10px;}
+/* ======================CUSTOMER DETAILS=======================*/
+.customer-details #contactfrm .postCode input[type='text']{width:100px;}
+.customer-details #content h1{margin-bottom:15px;}
+/* ======================HELP=======================*/
+.help #content .box-checkA ul ,.help #content .box-checkA ul li,
+.help #content ul .faqs-title,.help span.xplus,.faqsdatashow
+{float:left;}
+.help #content .box-checkA ul li{width:600px;}
+.help #content ul .faqs-title{cursor:pointer;}
+.help #content ul .li-row{margin-bottom:10px;}
+.help span.xplus{margin-right:5px;width:10px;}
+.help #content .box-checkA{width:685px;background-color:#EFEFEF;}
+.help .faqsdata {display: none;}
+.faqsdatashow {display: block; margin-left: 25px; width: 630px;margin-bottom:10px;}
+.help #content .faqsdatashow  p{margin:0 0;}
+/* ======================RSS=======================*/
+.rss #menu-selfc li ul .linkA-4{color:#ff0000;text-decoration:underline;}
+/* ======================SWITCH PROVIDER=======================*/
+.switch-provider #content h1,.about-us #content h1,.troubleshooting #content h1,.product #content h1,
+.speed-estimation #content h1
+{margin-bottom:15px;}
+.switch-provider #content ol {margin-left:2.5em;}
+.switch-provider #content ol li{margin-bottom:10px;}
+/* ======================ABOUT US=======================*/
+.about-us #content p{line-height:1.7em;}
+/* ======================PRIVACY=======================*/
+.privacy .halfcol-left,.terms .halfcol-left{width:355px;}
+.privacy .halfcol-right,.terms .halfcol-right{width:345px;margin-left:20px;}
+.privacy .halfcol-left ul li,.privacy .halfcol-right ul li,
+.terms .halfcol-left ul li,.terms .halfcol-right ul li
+{margin-bottom:10px;list-style-type:disc;margin-left:2em;}
+/* ======================TERMS=======================*/
+.terms .halfcol-left,.terms .halfcol-right{margin-top:15px;}
+.terms .alpha li{margin-bottom:10px;margin-left:2em;}
+.terms #FairPolicy{float:left;margin-top:20px;}
+.terms .term-cond{width:690px;height:285px;}
+.terms h3{margin-bottom:15px;}
+/* ======================TROUBLESHOOTING=======================*/
+.troubleshooting #content ol,.troubleshooting #content ul{margin-left:1.5em;}
+.troubleshooting #content li{margin-bottom:10px;}
+/* ======================PRODUCTS=======================*/
+.product .getcont{float:left;text-decoration:none;cursor:pointer;}
+.product .box-brdb{float:left;height:65px;width:351px;}
+.product #brdb-orange,.product #brdb-red{background-repeat:no-repeat;margin-bottom:10px;}
+.product #brdb-orange{background-image:url("../img/heading-orange.jpg");margin-right:17px;}
+.product #brdb-red{background-image:url("../img/heading.jpg");margin-right:0;}
+.product #content  h2.title-head{color:#fff;font-size:26.5px;font-weight:bold;text-align:center;line-height:2.5em;margin:0;}
+.product #contentHB{float:left;}
+.product .head,.product .details-Pack{width:716px;float:left;}
+.product .head{height:30px;color:#fff;margin:5px 0;}
+.product  #content .head p{font-size:20px;font-weight:bold;margin:0 0 0 10px;line-height:1.5em;}
+.product .orange{background-color:#ff8a18;}
+.product .redbgd{background-color:#fe0000;}
+.product .details-Pack{background-color:#e2e2e2;margin-bottom:10px;}
+.product .details-Pack li{border-bottom:1px solid #fff;float:left;}
+.product .details-Pack li.label{border-right:2px solid #ececec;margin-left:5px;}
+.product .details-Pack li.detail{margin-right:5px;padding-left:25px;}
+.product .details-Pack li{width:339px;height:30px;line-height:2.3em;}
+.product .details-Pack li.grey-box{width:716px;height:91px;background-color:#d9d9d9;border-top:2px solid #fff;border-bottom:2px solid #fff;}
+.product .details-Pack li.grey-box .label,.product .details-Pack li.grey-box .detail,.product .details-Pack li.big{height:45px;line-height:4.5em;}
+.product .details-Pack li.last{border-bottom:none;}
+.product #content .details-Pack li p{margin:5px 0 0 0;}
+.product .details-Pack li.dble{width:716px;padding-left:5px;line-height:normal;height:45px;}
+.product .details-Pack li.dble a{float:right;color:#000;text-decoration:underline;margin-right:15px;}
+.product .details-Pack .red{font-weight:bold;}
+.product .detail .boldp,.product .detail .red,.product #content .sption{float:left;}
+.product #content .sption{border-left:2px solid #ececec;height:30px;margin-left:15px;padding-left:15px;}
+.product #content .sub-heading{width:351px;margin-left:10px;float:left;}
+.product #content .orangeT h2{color:#ff8a18;}
+.product #content .sub-heading h2{font-size:20px;margin:10px 0;}
+.product #content .sub-heading h2.first{margin-top:0;margin-bottom:10px;}
+.product #content .red h2{color:#fe0000;}
+/* ======================SPEED ESTIMATION=======================*/
+.speed-estimation ol{margin-left:2.5em;}
+.speed-estimation ol li{margin-bottom:10px;}
+.speed-estimation #content h2{font-size:18px;margin-top:15px;}
+/* ======================DD-PAYMENT=======================*/
+.dd-payment #content h1{margin-bottom:15px;}
+.dd-payment #content,.dd-payment #content .footpayment,.account-created #content{width:950px;margin-top:20px;}
+.dd-payment #content .sort{width:22px;}
+.dd-payment #content .medium{width:150px;}
+.dd-payment #content .no-display li{margin:10px 0;}
+.dd-payment #content .no-display{margin-bottom:30px;}
+.dd-payment #content .no-display label{width:120px;float:left;}
+.dd-payment #content #information{float:left;width:250px;margin-left:60px;border:2px solid #000;padding:10px;height:217px;}
+.dd-payment #content #information p{font-weight:bold;line-height:1.5em;}
+.dd-payment #content .footpayment{float:left;margin-top:30px;}
+.dd-payment #content hr{color:#d4d4d4;margin:0 0 30px 0;height:1px;border:0;background-color:#d4d4d4;}
+.dd-payment #content .footpayment p{width:367px;float:left;}
+.dd-payment #content .footpayment .logodd{float:right;width:150px;}
+.dd-payment #content .btn-small,.dd-payment #content .btn-big{margin-right:15px;margin-bottom:15px;}
+.dd-payment .btn-big{float:right;background-color:#FF0000;color:#fff;border:none;cursor:pointer;padding:3px;font-weight:bold;margin-top:15px;}
+.dd-payment .btn-big:hover{background-color:#ff6669;}
+.guarantee h1{color:#000;}
+.guarantee #content{border:2px solid #000;padding:10px;}
+.guarantee #content ul li{list-style-type:disc;margin:10px 0;margin-left:1.8em;}
+.guarantee #content img{float:right;}
+.account-created #content .box-checkA{padding:15px;}
+/* ======================SITEMAP=======================*/
+.sitemap #content h1{margin-bottom:15px;}
+.sitemap .box-checkA{background-color:#efefef;}
+.sitemap .module{border-right:1px solid #e2e2e2;float:left;margin-right:50px;margin-bottom:15px;}
+.sitemap .module ul li,.sitemap .module ul{width:193px;}
+.sitemap .module ul li ul,.sitemap .module ul,.sitemap .module ul li{float:left;}
+.sitemap .module ul li{margin:10px 0;}
+.sitemap .module ul li ul{margin-left:2.4em;}
+.sitemap .module ul li ul li{margin:5px 0;}
+.sitemap .module ul li a{color:#000;}
+.sitemap .module ul li a.link{color:#ff0000;}
+.sitemap .last{border-right:none;margin-right:0;}
+/* ======================OFFERS=======================*/
+.offers #content h1{margin-bottom:15px;}
+.offers #cont-boxs,.offers .box{float:left;width:254px;}
+.offers #cont-boxs a{text-decoration:none;}
+.offers .box{
+	height:92px;
+	color:#fff;
+	margin-bottom:20px;
+	cursor:pointer;
+	background-repeat:no-repeat;
+	
+}
+.redof{background-image:url(../img/red.jpg);}
+.orangeof{background-image:url(../img/orange.jpg);}
+.greenof{background-image:url(../img/green.jpg);}
+.offers #space{height:92px;width:10px;float:left;}
+.offers .color-red{background-color:#e10004;margin-top:0;}
+.offers .color-orange{background-color:#ff8901;margin-top:112px;}
+.offers .color-green{background-color:#7cae1b;margin-top:224px;}
+.offers .text-offer{
+	width:409px;
+	height:296px;
+	float:left;
+	padding:15px 15px 5px 15px;
+}
+.offers .text-offer a.linkp{float:right;}
+.offers .text-offer p,.offers .text-offer a{color:#fff;}
+.offers #cont-red{background-color:#e10004;}
+.offers #cont-orange{background-color:#ff8901;}
+.offers #cont-green{background-color:#7cae1b;}
+.offers #cont-boxs .title-off{font-size:20px;float:right;margin:23px 25px 0 0;font-weight:bold;text-align:right;}

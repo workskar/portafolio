@@ -1,0 +1,150 @@
+/* ======================NAVEGATION =======================*/ 
+nav {height: auto;}
+nav#globaheader{float:left;width:1000px;height:50px;position:relative;padding-top:28px;background-color:#fff;}
+nav #logo{
+	background-image: url("../img/top_logo.png");
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 113px;
+    z-index:999999;
+	position:absolute;
+	left:8px;
+	top:14px;
+}
+#vizz-menu{width:787px;margin-left:212px;}
+#vizz-menu,#vizz-menu ul{float:left;}
+#vizz-menu ul li,#vizz-menu ul li a{float:left;}
+#vizz-menu ul#vizz-pages li{margin-right:20px;}
+#vizz-menu ul#bottons li{margin-right:6px;}
+#vizz-menu #vizz-pages{width:453px;}
+#vizz-menu #bottons{width:auto;float:right;}
+#vizz-menu #vizz-pages li a{font-size:18px;line-height:1.6em;}
+#vizz-menu #vizz-pages li a:hover{text-decoration:underline;}
+#vizz-menu #bottons li a.checkA,#vizz-menu #bottons li a.switchP,#vizz-menu #bottons li a.login{
+	background-image:url("../img/button-off.jpg");
+	width:124px;
+	height:25px;
+	text-align:center;
+	color:#fff;
+	font:bold 12px/2em Arial, Sans-serif, Verdana;
+}
+#vizz-menu #bottons li a.login{background-image:url("../img/login-off.jpg");width:66px;}
+#vizz-menu #bottons li a.checkA:hover,#vizz-menu #bottons li a.switchP:hover{background-image:url("../img/button-on.jpg");}
+#vizz-menu #bottons li a.login:hover{background-image:url("../img/login-on.jpg");width:66px;}
+/* ======================RIGHT SIDE =======================*/ 
+#right-col,#right-col nav#products{width:240px;}
+#right-col{float:right;}
+#right-col #box-contact{margin-left:11px;}
+#box-contact li{float:left;width:240px;margin-bottom:12px;height:40px;}
+#box-contact li.chat{margin-bottom:10px;}
+#box-contact li.tips{margin-bottom:2px;}
+#box-contact li.call a,#box-contact li.chat a,#box-contact li.tips a,#box-contact li.faqs a,#box-contact li.myacount a
+{background-repeat:no-repeat;padding-left:51px;float:left;height:38px;}
+#box-contact li.call a{background-image:url("../img/Call_icon.jpg");margin-left:7px;padding-left:44px;}
+#box-contact li.chat a{background-image:url("../img/chat_icon.jpg");}
+#box-contact li.tips a{background-image:url("../img/Tips_icon.jpg");margin-left:2px;padding-left:50px;}
+#box-contact li.faqs a{background-image:url("../img/FAQ_icon.jpg");margin-left:7px;padding-left:44px;}
+#box-contact li.myacount a{background-image:url("../img/account-icon.jpg");margin-left:4px;padding-left:47px;}
+#box-contact li.tips a:hover,#box-contact li.faqs a:hover,#box-contact li.chat a span.red-text:hover,#box-contact li.myacount a span.red-text:hover
+{text-decoration:underline;}
+#box-contact li.tips a p{margin-top:3px;}
+#box-contact li.faqs a p{margin-top:5px;}
+#right-col #box-contact span.red-text,#right-col #box-contact span.boldp, nav#products h2,nav#products ul li a{font-size:17px;}
+#right-col nav#products{float:left;}
+nav#products h2{color:#000;margin:5px 0;}
+nav#products ul li {border-top:1px solid #c5c5c5;height:30px;width:223px;}
+nav#products ul li a{line-height:1.6em;}
+nav#products ul li a:hover,#menu-selfc li a:hover{text-decoration:underline;}
+nav#products ul li a,nav#products h2{margin-left:17px;}
+/* ======================RIGHT-SIDE-SELF-CARE =======================*/ 
+nav#nav-selfcare .title-menu{font-size:18px;float:left;cursor:pointer;}
+#menu-selfc{float:left;}
+#menu-selfc li{margin-bottom:10px;}
+#menu-selfc li,#menu-selfc li a.title-menu{float:left;width:190px;}
+#menu-selfc li ul li{margin-bottom:5px;}
+#menu-selfc li ul li a{color:#000;}
+#menu-selfc .sub-slide{display:none;}
+#menu-selfc .sub-slide-show{display:inline-block;}
+#menu-selfc #sub-account,#menu-selfc #sub-support,#menu-selfc #sub-personal{
+	float:left;margin-left:11px;margin-top:5px;}
+nav#nav-selfcare .spnsub{font-size:11px;margin-right:5px;}
+/* ======================RIGHT-SIDE PACKAGES=======================*/
+#right-col #packages-show{float:left;margin-left:15px;display:none;}
+#right-col #packages-show a{color:#000;text-decoration:none;}
+#right-col .box-package{width:200px;background-color:#ff0008;padding-bottom:1px;margin-bottom:10px;}
+#right-col .orange{background-color:#ff8a18;}
+#right-col .box-package .head-read{
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+	margin-left:10px;
+	height:25px;
+	line-height:1.8em;
+}
+#right-col .box-package li.content-pack{background-color:#E5E5E5;width:198px;margin-left:1px;}
+#right-col .box-package .content-pack ul{margin-left:5px;width:185px;margin-top:5px;}
+#right-col .box-package .content-pack ul li{border-bottom:1px solid #AFAFAF;height:23px;line-height:1.9em;}
+#right-col .box-package .content-pack ul li.last-row{border-bottom:none;}
+.content-pack .nrmal{float:left;width:58px;margin-left:5px;}
+#right-col #packages-show .red{font-weight:bold;}
+/* ======================hide products=======================*/
+.select-broadband #right-col #products
+{display:none;}
+/* ======================show packages=======================*/
+.select-broadband #right-col #packages-show{display:inline-block;}
+/* ======================FOOTER =======================*/ 
+#vizzfooter .net-foot,#vizzfooter,#vizzfooter .copy-rights{float:left;}
+#vizzfooter{background-color:#fff;}
+#vizzfooter .net-foot{
+	background-image:url('../img/footer_bar.jpg');
+	background-repeat: repeat-x;
+	width:1000px;
+	height:125px;
+}
+#vizzfooter a#logo-foot{
+	background-image: url("../img/footer_logo.jpg");
+	width:135px;
+	height:76px;
+	float:left;
+	margin:33px 77px 15px 40px;
+}
+#vizzfooter ul,#vizzfooter ul li{float:left;}
+#vizzfooter ul#foot-menu{margin-top:33px;width:450px;height:80px;}
+#vizzfooter ul#foot-menu li{width:105px;margin-right:45px;}
+#vizzfooter ul#foot-menu li h4{color:#c5c5c5;font-size:16.5px;font-weight:normal;}
+#vizzfooter ul#foot-menu li ul{margin-top:5px;}
+#vizzfooter ul#foot-menu li ul li{margin-bottom:3px;}
+#vizzfooter ul#foot-menu li ul li a:hover,.copy-rights .copy-menu li a:hover{text-decoration:underline;}
+#vizzfooter .copy-rights{width:1000px;background-color:#d5d5d5;height:25px;}
+#vizzfooter .copy-rights ul.copy-menu{float:right;}
+#vizzfooter .copy-rights .copy-menu li,#vizzfooter .copy-rights p{float:left;}
+.copy-rights .copy-menu li a{color:#000;}
+#vizzfooter .copy-rights .copy-menu li{margin-right:25px;}
+#vizzfooter .copy-rights ul.copy-menu,#vizzfooter .copy-rights p{margin-top:5px;}
+#vizzfooter .copy-rights p{margin-left:20px;}
+#vizzfooter .newsletter{
+	width:240px;
+	margin-right:10px;
+	border:1px solid #c7c7c7;
+	float:left;
+	margin-top:25px;
+	height:85px;
+}
+#vizzfooter .newsletter form{float:left;margin:10px 10px 0 21px;}
+#vizzfooter .newsletter form span.head-n{font-size:14px;font-weight:bold;}
+#vizzfooter .newsletter form span.text{font-size:11px;line-height:2em;}
+#vizzfooter .newsletter form  input.submit{
+	background-image:url("../img/login-off.jpg");
+	width:66px;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+}
+#vizzfooter .newsletter form  input.submit:hover{background-image:url("../img/login-on.jpg");}
+@-moz-document url-prefix() {
+	  #vizzfooter .newsletter form  input.submit {
+		padding-bottom:5px;
+	  }
+}
+#vizzfooter .newsletter form  input[type='email']{width:130px;border:1px solid #625c60;float:left;margin-right:5px;padding-left:3px;}
+#vizzfooter .newsletter form  input.submit,#vizzfooter .newsletter form  input[type='email']{height:25px;}

@@ -1,0 +1,57 @@
+/* ======================PROJECT =======================*/
+/* line 32, ../../sass/project.scss */
+#centre-me {
+  z-index: 200;
+  background: none;
+  width: 980px;
+  height: 405px;
+  top: 50%;
+  left: 50%;
+  margin-top: -202.5px;
+  margin-left: -490px;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+}
+/* line 34, ../../sass/project.scss */
+#centre-me .close {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  z-index: 1000;
+}
+
+/* line 41, ../../sass/project.scss */
+#overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.62;
+  width: 100%;
+  background: #000;
+  z-index: 100;
+  position: fixed;
+  display: block;
+}
+
+/* line 44, ../../sass/project.scss */
+#loader {
+  width: 51px;
+  height: 53px;
+  display: none;
+  padding: 3px 2px 3px 4px;
+  z-index: 150;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+  background: url("../img/loading.gif");
+}
+/* line 53, ../../sass/project.scss */
+#loader span {
+  width: 16px;
+  height: 16px;
+  display: block;
+  overflow: hidden;
+  text-indent: -999px;
+}
