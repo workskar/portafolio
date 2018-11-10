@@ -31,18 +31,23 @@
                     </p>
                     </div>
                 </noscript>
-                <div class="carousel"> <!-- BEGIN CONTAINER -->
-                    <div class="slides"> <!-- BEGIN CAROUSEL -->
-						<div> <!-- SLIDE ITEM -->
-                            <a class='link-show' href="project-niume.html" data-title='niume'>
-                                <img src="img-niume/landing_page.png" alt='Niume Ltd' title='Niume Ltd'>
-                            </a>    
-                        </div>
-                        <div> <!-- SLIDE ITEM -->
-                            <a class='link-show' href="project-niume.html" data-title='niume'>
-                                <img src="img-niume/landing_2.png" alt='Niume ltd' title='Niume ltd'>
-                            </a>    
-                        </div>
+                <h1>This is changing styles</h1>
+                
+                <section>This a new content for the portfolio</section>
+                
+<!--                <div class="carousel">  BEGIN CONTAINER -->
+<!--                    <div class="slides">  BEGIN CAROUSEL -->
+<!--						<div>  SLIDE ITEM -->
+<!--                            <a class='link-show' href="project-niume.html" data-title='niume'>-->
+<!--                                <img src="img-niume/landing_page.png" alt='Niume Ltd' title='Niume Ltd'>-->
+<!--                            </a>    -->
+<!--                        </div>-->
+<!--                        <div>  SLIDE ITEM -->
+<!--                            <a class='link-show' href="project-niume.html" data-title='niume'>-->
+<!--                                <img src="img-niume/landing_2.png" alt='Niume ltd' title='Niume ltd'>-->
+<!--                            </a>    -->
+<!--                        </div>-->
+<!--
                         <div>
                             <a class='link-show' href="project-niume.html" data-title='niume'>
                                 <img src="img-niume/landing_4.png" alt='Niume ltd' title='Niume ltd'>
@@ -65,8 +70,9 @@
                                 <img src="img-yoigo/home.jpg" alt='Yoigo' title='Yoigo'>
                             </a>
                         </div>
-                    </div> <!-- END SLIDES -->
-                </div> <!-- END CAROUSEL -->
+-->
+<!--                    </div>  END SLIDES -->
+<!--                </div>  END CAROUSEL -->
             </div>
         </section>
         <div  id="loader">
